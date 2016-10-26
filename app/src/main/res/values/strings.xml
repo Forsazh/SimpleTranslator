@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Simple Translator</string>
+    <string name="for_translate">Text for translate</string>
+    <string name="translated">Translation</string>
+    <string name="en_ru_btn">en-ru</string>
+    <string name="ru_en_btn">ru-en</string>
+    <string name="error_response">Check your internet connection</string>
+</resources>
