@@ -46,6 +46,13 @@
             android:layout_weight="1"
             android:text="@string/ru_en_btn" />
 
+        <Button
+            android:id="@+id/ru_tt_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ru_tt_btn" />
+
     </LinearLayout>
 
 </LinearLayout>

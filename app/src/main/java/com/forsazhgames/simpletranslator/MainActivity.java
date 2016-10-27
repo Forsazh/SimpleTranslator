@@ -25,11 +25,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private final String KEY = "trnsl.1.1.20161025T112004Z.1d184eddbf0c8425.f21fc6fcb6d54f55793c15a29d0e0dc6d3d78345";
     private final String EN_RU = "en-ru";
     private final String RU_EN = "ru-en";
+    private final String RU_TT = "ru-tt";
 
     private EditText forTranslateET;
     private TextView translatedTV;
     private Button enRuButton;
     private Button ruEnButton;
+    private Button ruTtButton;
 
     private boolean wasTouch;
     private Gson gson = new GsonBuilder().create();
@@ -54,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         enRuButton.setOnClickListener(this);
         ruEnButton = (Button) findViewById(R.id.ru_en_btn);
         ruEnButton.setOnClickListener(this);
+        ruTtButton = (Button) findViewById(R.id.ru_tt_btn);
+        ruTtButton.setOnClickListener(this);
     }
 
     private void tryToTranslate(String lang) {
@@ -95,6 +99,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.ru_en_btn:
                 tryToTranslate(RU_EN);
+                break;
+            case R.id.ru_tt_btn:
+                tryToTranslate(RU_TT);
                 break;
         }
     }
